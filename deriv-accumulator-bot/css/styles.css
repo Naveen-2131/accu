@@ -826,3 +826,77 @@ html, body {
   font-weight: 400;
   padding: 6px 10px;
 }
+
+/* =============================================
+   Mobile Responsiveness & Touch Optimization
+   ============================================= */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.65rem;
+  }
+
+  .nav-controls {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.4rem;
+  }
+
+  .balance-card {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .grid-3col {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card {
+    padding: 0.85rem;
+  }
+
+  .growth-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+
+  .growth-option {
+    padding: 0.5rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .tick-history-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+
+  .stats-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .trade-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .trade-table {
+    font-size: 0.75rem;
+  }
+
+  .trade-table th, .trade-table td {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .modal-card {
+    width: 95%;
+    padding: 1.25rem;
+  }
+}
